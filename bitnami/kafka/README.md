@@ -145,7 +145,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `listenerSecurityProtocolMap`              | The protocol->listener mapping. Auto-calculated it's set to nil                                                                                      | `""`                                |
 | `allowPlaintextListener`                   | Allow to use the PLAINTEXT listener                                                                                                                  | `true`                              |
 | `interBrokerListenerName`                  | The listener that the brokers should communicate on                                                                                                  | `INTERNAL`                          |
-
+| `namespaceOverride`                  | Namespace for Kafka resources                                                                                                  | `""`                          |
 
 ### Statefulset parameters
 

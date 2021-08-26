@@ -24,6 +24,9 @@ nameOverride: ""
 ## @param fullnameOverride String to fully override kafka.fullname
 ##
 fullnameOverride: ""
+## @param namespaceOverride Namespace for Kafka resources
+##
+namespaceOverride: ""
 ## @param clusterDomain Default Kubernetes cluster domain
 ##
 clusterDomain: cluster.local

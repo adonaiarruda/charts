@@ -40,6 +40,17 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- end -}}
 
 {{/*
+Return Kafka Namespace to use
+*/}}
+{{- define "kafka.namespace" -}}
+    {{- if .Values.namespaceOverride }}
+        {{- .Values.namespaceOverride -}}
+    {{- else }}
+        {{- .Release.Namespace }}
+    {{- end -}}
+{{- end -}}
+
+{{/*
 Return the proper Kafka image name
 */}}
 {{- define "kafka.image" -}}
